@@ -1,0 +1,545 @@
+body{
+    font-family: century gothic;
+    background: linear-gradient(to right, #8c598f, #b8bd78);
+}
+.navbar{
+    margin: bottom 20px;
+    background:linear-gradient(#8c598f, #b8bd78);
+}
+.navbar-toggler {
+    position: relative; /* Allows custom positioning */
+    left: 0;
+}
+.navbar .container-fluid {
+    display: flex;
+    justify-content:space-between; /* Align items to the left */
+    align-items: center;
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+}
+
+.logoContainer{
+    display: flex; /* Align items in a single row */
+    align-items: center; /* Center items vertically */
+    max-width: 80px; /* Wrap the container tightly around its content */ 
+    flex-shrink: 0;
+    margin: 10px;
+}
+.logoContainer a {
+    display: inline-block; /* Ensure the anchor tag wraps its content only */
+    align-items: center; /* Center the logo within the anchor tag */
+    text-decoration: none; /* Optional: Remove underline on the link */
+}
+.logo{
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    max-height: 70px;
+}
+.logo-link{
+    display: inline-block; /* Shrinks to image size */
+    max-width: 150px;
+}
+.nav-item{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+.icon-group a{
+    color:white;
+    margin-left:15px;
+}
+.cart{
+    margin: 4%;
+    padding:4%;
+    color: white;
+    background-color: #000000;
+    opacity: 0.65;
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.20);
+    overflow: hidden;
+}
+.carousel {
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+.carousel img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev, 
+.carousel-control-next{
+    height: 500px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    right:50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(-50%, -50%); /* Center the content both horizontally and vertically */
+    text-align: center; /* Ensure the text is centered horizontally */
+    width: 100%; /* Ensure the caption spans the full width */
+    color: white; /* You can adjust this based on your design */
+}
+
+.cd.carousel-caption{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    right:50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(-50%, -50%); /* Center the content both horizontally and vertically */
+    text-align: center; /* Ensure the text is centered horizontally */
+    width: 100%; /* Ensure the caption spans the full width */
+    color: white; /* You can adjust this based on your design */
+}
+.cbonus{
+    margin-left:30%;
+    margin-right:30%;
+    background-color: rgba(241, 241, 241, 0.4);
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: freestyle script;
+    font-size: 65px;
+    overflow: hidden;
+}
+.snow-wrap{
+    overflow: hidden;
+    position:relative;
+  }
+  .snow, snow:after, snow:before{
+    content:"";
+    position:absolute;
+    top:-600px;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-image:
+    radial-gradient(4px 4px at 100px 50px, #ffff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #ffff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #ffff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #ffff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #ffff, transparent),
+    radial-gradient(3px 3px at 50px 200px, #ffff, transparent),
+    radial-gradient(4px 4px at 100px 50px, #ffff, transparent),
+    radial-gradient(6px 6px at 150px 300px, #ffff, transparent),
+    radial-gradient(3px 3px at 250px 400px, #ffff, transparent),
+    radial-gradient(6px 6px at 350px 500px, #ffff, transparent),
+    radial-gradient(4px 4px at 350px 250px, #ffff, transparent),
+    radial-gradient(4px 4px at 100px 50px, #ffff, transparent),
+    radial-gradient(5px 5px at 450px 500px, #ffff, transparent),
+    radial-gradient(6px 6px at 250px 450px, #ffff, transparent),
+    radial-gradient(4px 4px at 360px 50px, #ffff, transparent),
+    radial-gradient(6px 6px at 90px 590px, #ffff, transparent),
+    radial-gradient(6px 6px at 120px 400px, #ffff, transparent),
+    radial-gradient(3px 3px at 400px 580px, #ffff, transparent),
+    radial-gradient(4px 4px at 500px 650px, #ffff, transparent),
+    radial-gradient(6px 6px at 70px 690px, #ffff, transparent),
+    radial-gradient(3px 3px at 460px 700px, #ffff, transparent),
+    radial-gradient(4px 4px at 600px 700px, #ffff, transparent),
+    radial-gradient(4px 4px at 500px 750px, #ffff, transparent),
+    radial-gradient(4px 4px at 620px 800px, #ffff, transparent),
+    radial-gradient(4px 4px at 770px 840px, #ffff, transparent),
+    radial-gradient(4px 4px at 800px 900px, #ffff, transparent);
+    background-size:600px, 600px;
+    animation: snowanimation 3s linear;
+    animation-iteration-count: infinite;
+}
+snow:after{
+    margin-left: -250px;
+    opacity: 0.5;
+    filter:blur(2px);
+    animation-direction:reverse;
+    animation-duration: 70s;
+}
+snow:before{
+    margin-left: -350px;
+    opacity: 0.7;
+    filter:blur(1px);
+    animation-direction:reverse;
+    animation-duration: 70s;
+}
+@keyframes snowanimation{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(700px);
+    }
+}
+.btdeal{
+    border-radius: 20px;
+}
+
+.hb.carousel-caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right:50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translate(-50%, -50%); /* Center the content both horizontally and vertically */
+    text-align: center; /* Ensure the text is centered horizontally */
+    width: 100%; /* Ensure the caption spans the full width */
+    color: rgb(0, 0, 0); /* You can adjust this based on your design */
+}
+.containersec{
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(152, 88, 20, 0.35);
+    border-radius: 20px;
+}
+
+.deal{
+    flex: 1 1 calc(100% - 20px); /* Fills full width by default */
+    max-width: calc(100% - 20px); /* Ensures no overflow */
+    padding: 3%;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.20);
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.christmasD{
+    background-image: url("https://imgcdn.stablediffusionweb.com/2024/10/26/da1bd332-38fa-4e82-a614-deab61758962.jpg");
+    background-position-x: center; 
+    color:#ffffff;
+    opacity: 85%;
+}
+.birthdayD{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/035/614/114/non_2x/ai-generated-color-balloons-an-gift-boxes-for-birthday-decoration-ai-generated-free-photo.jpg");
+    background-position: right;
+    opacity: 85%;
+}
+.categorytitle{
+    justify-self: center;
+    color:#352223;
+    font-size: 50px;
+}
+#carouselcardHomedecor,
+#carouselcardStationery,
+#carouselcardClothAcc,
+#carouselcardKeepsake,
+#carouselcardFestive{
+    padding:5%;
+    padding-top: 2%;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+/* cards */
+.card img{
+    max-width: 300px;
+    height: 400px;
+}
+
+.card {
+    justify-self: center;
+    flex: 0 0 auto; /* Prevent cards from resizing or wrapping */
+    width: 18rem; /* Prevent cards from shrinking or growing */
+    margin: 0.5%;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .20);
+}
+
+#aboutus{
+    justify-self: center;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.20);
+}
+.contactus{
+    margin: 2%;
+    justify-self: center;
+    padding: 4%;
+    padding-left: 2%;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.20);
+}
+.fc{
+    margin: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.20);
+    overflow-x: hidden;
+}
+.bdeal{
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 20px;
+    padding: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon-container {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-container {
+    position: absolute;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-bar-container input {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    display: block;
+}
+
+/* Expand search bar when hovering over icon or bar */
+.search-icon-container:hover + .search-bar-container,
+.search-bar-container:hover {
+    width: 200px;
+}
+@media(min-width: 768px){
+    .cc{
+        display:flex;
+    }
+    .cit{
+        flex:0 0 calc(100%/3);
+        display:block;
+        margin-right: 0;
+        margin-left: 2%;
+    }
+    .deal{
+        flex: 1 1 calc(45% - 20px); /* Two items per row */
+        max-width: calc(45% - 20px);
+    }
+    .christmasD{
+        margin-left: 3%;
+    }
+    .birthdayD{
+        margin-left: 3%;
+    }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+    .carousel img {
+        max-height: 300px; /* Reduce height for smaller screens */
+    }
+    .carousel .col-md-4 {
+        flex: 0 0 100%; /* Full width on small screens */
+        max-width: 33.33%;
+    }
+    .carousel-caption {
+        top: 50%; /* Adjust vertical positioning */
+        width: 90%; /* Add margins beside edges */
+        font-size: 1rem; /* Adjust font size */
+    }
+    .navbar {
+        display: flex; /* Ensure flexible alignment for children */
+        justify-content: space-between; /* Space between logo and hamburger */
+        align-items: center; /* Align items vertically */
+        padding: 0 15px; /* Add some horizontal padding */
+    }
+    .navbar-toggler {
+        position: relative; /* Prevent overlap */
+        margin-left: auto; /* Push it to the right */
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .cc{
+        display:flex;
+    }
+    .cit{
+        flex:0 0 calc(100%/3);
+        display:block;
+        margin-right: 0;
+        margin-left: 2%;
+    }
+    .deal{
+        flex: 1 1 calc(45% - 20px); /* Two items per row */
+        max-width: calc(45% - 20px);
+    }
+    .christmasD{
+        margin-left: 3%;
+    }
+    .birthdayD{
+        margin-left: 3%;
+    }
+}
+/* small phones */
+@media (min-width: 391px) and (max-width: 600px) { 
+    body{
+        overflow-x: hidden;
+    }
+    .christmasD{
+        margin-left: 3%;
+    }
+    .birthdayD{
+        margin-left: 3%;
+    }
+    .cc{
+        display:flex;
+    }
+    .cit{
+        flex:0 0 calc(100%/3);
+        display:block;
+        margin-right: 0;
+        margin-left: 2%;
+    }
+}
+@media (max-width: 390px){
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 100%;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        max-height: 70px;
+    }
+    .logoContainer{
+        display: flex; /* Align items in a single row */
+        align-items: center; /* Center items vertically */
+        margin-right: auto; /* Push the container to the left */
+        max-width: fit-content; /* Wrap the container tightly around its content */ 
+    }
+    .logoContainer a {
+        display: inline-block; /* Ensure the anchor tag wraps its content only */
+        align-items: center; /* Center the logo within the anchor tag */
+        text-decoration: none; /* Optional: Remove underline on the link */
+    }
+    .logo-link{
+        display: inline-block; /* Shrinks to image size */
+        max-width: 150px;
+    }
+    .deal{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .christmasD{
+        margin: 3%;
+    }
+    .birthdayD{
+        margin: 3%;
+    }
+    .cbonus{
+        overflow: hidden;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bdeal{
+        margin-left:5%;
+        margin-right:5%;
+        margin-top: -4%;
+    }
+}
+
+
+/* Default Light Mode Styles (already present in your CSS) */
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background:linear-gradient(to right, #1f1f1f, #3d1d1d);
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background: linear-gradient(to right, #000000, #480202);
+    border-bottom: 1px solid #333;
+}
+
+.card.dark-mode {
+    background-color: #3e1818;
+    color: #ffffff;
+    border-color: #333;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.15);
+}
+
+.footer.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Dark Mode for Specific Elements */
+.dark-mode .btn-primary {
+    background-color: #3b82f6;
+    border-color: #2563eb;
+    color: white;
+}
+.dark-mode .dropdown-menu{
+    background-color: #1f1f1f;
+}
+.dark-mode .containersec{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+.dark-mode .card-body{
+    background-color: #3e1818;
+    border: 1px solid black;
+}
+
+.dark-mode .card-title{
+    color:#ffffff;
+}
+
+.dark-mode .card-text{
+    color:#ffffff;
+}
+.dark-mode .navbar{
+    background: linear-gradient(to right, #000000, #480202);
+    border-bottom: 1px solid #333;
+}
+.dark-mode .categorytitle{
+    color:#350202;
+    text-shadow:2px 2px 5px gray;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.dark-mode .modal-content{
+    color:rgb(255, 255, 255);
+    background-color: #1f1d1d;
+}
+
+.dark-mode a {
+    color: #ffffff;
+}
+
+.footer{
+    background:linear-gradient(to right,#3f1740, #4a4a1c);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.footer .logo{
+    width: 50%;
+}
